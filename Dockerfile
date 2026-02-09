@@ -1,9 +1,12 @@
 FROM ethereum/client-go:stable
 
 WORKDIR /app
-COPY genesis.json .
-COPY start.sh .
-RUN chmod +x start.sh
+
+COPY genesis.json /app/genesis.json
+COPY start.sh /app/start.sh
+
+RUN chmod +x /app/start.sh
 
 EXPOSE 8545
-CMD ["./start.sh"]
+
+CMD ["/bin/sh", "/app/start.sh"]
