@@ -1,8 +1,12 @@
 #!/bin/sh
+set -e
 
-geth init genesis.json
+# init only if not initialized
+if [ ! -d "/root/.ethereum/geth" ]; then
+  geth init genesis.json
+fi
 
-geth \
+exec geth \
   --http \
   --http.addr 0.0.0.0 \
   --http.port 8545 \
