@@ -1,0 +1,23 @@
+{
+  "config": {
+    "chainId": 18591223,
+    "clique": {
+      "period": 5,
+      "epoch": 30000
+    },
+    "homesteadBlock": 0,
+    "byzantiumBlock": 0,
+    "istanbulBlock": 0,
+    "londonBlock": 0
+  },
+  "difficulty": "1",
+  "gasLimit": "12000000",
+
+  "extradata": "0x000000000000000000000000D7e39d8bbE6FA5eE59Ff8a945D93E16deaC5621000000000000000000000000000000000000000000000000000000000000000000",
+
+  "alloc": {
+    "0xD7e39d8bbE6FA5eE59Ff8a945D93E16deaC56210": {
+      "balance": "0x21E19E0C9BAB2400000"
+    }
+  }
+}
