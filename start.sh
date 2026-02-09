@@ -1,9 +1,8 @@
 #!/bin/sh
 set -e
 
-# init only if not initialized
 if [ ! -d "/root/.ethereum/geth" ]; then
-  geth init genesis.json
+  geth init /app/genesis.json
 fi
 
 exec geth \
